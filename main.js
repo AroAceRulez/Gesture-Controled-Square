@@ -19,7 +19,7 @@ poseNet.on('pose',gotPoses);                    //executing or running the model
 function gotPoses(results){
     if(results.length>0){
         console.log(results)
-        noseX=result[0].pose.nose.x;
+        noseX=results[0].pose.nose.x;
         noseY=results[0].pose.nose.y;
         console.log("noseX = " + noseX +" noseY = " + noseY);
 
